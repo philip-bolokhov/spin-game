@@ -1,15 +1,26 @@
 
-var started = false;
+let started = false;
 const startFunction = document.querySelector(".start");
 
 startFunction.addEventListener("click", () => {
 
-    var x = Math.floor(Math.random() * 100) + 1;
+    const x = Math.floor(Math.random() * 100) + 1;
     console.log(x);
+
+    const y = Math.floor(Math.random() * 100) + 1;
+    console.log(y);
     //Purple Rarities
     if (x <= 20) {
-        document.getElementById('imgRarities').src = `./img/purple.jpg`
-        console.log('purple')
+        if (y <= 33) {
+            document.getElementById('imgRarities').src = `./img/purple1.jpg`;
+            console.log('purple')
+        } else if (y <= 66) {
+            document.getElementById('imgRarities').src = `./img/purple2.jpg`;
+            console.log('purple')
+        } else {
+            document.getElementById('imgRarities').src = `./img/purple3.jpg`;
+            console.log('purple')
+        }
     } else if (x <= 40) {
         document.getElementById('imgRarities').src = `./img/gold.jpg`
         console.log('gold')
