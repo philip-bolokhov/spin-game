@@ -1,7 +1,7 @@
 
 let started = false;
 const startFunction = document.querySelector(".start");
-
+console.log(startFunction);
 startFunction.addEventListener("click", () => {
 
     const x = Math.floor(Math.random() * 100) + 1;
@@ -12,14 +12,14 @@ startFunction.addEventListener("click", () => {
     //Purple Rarities
     if (x <= 20) {
         if (y <= 33) {
-            document.getElementById('imgRarities').src = `./img/purple1.jpg`;
-            console.log('purple')
+            document.getElementById('imgRarities').src = `./img/purple.jpg`;
+            console.log('purple 1')
         } else if (y <= 66) {
             document.getElementById('imgRarities').src = `./img/purple2.jpg`;
-            console.log('purple')
+            console.log('purple 2')
         } else {
             document.getElementById('imgRarities').src = `./img/purple3.jpg`;
-            console.log('purple')
+            console.log('purple 3')
         }
     } else if (x <= 40) {
         document.getElementById('imgRarities').src = `./img/gold.jpg`
