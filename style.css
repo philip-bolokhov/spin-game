@@ -1,0 +1,136 @@
+*{ padding: 0%;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+h1{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 15%;
+    padding: 0%;
+    background-color: transparent;
+    text-align: center;
+    overflow: hidden;
+    font-size: 70px;
+
+}
+hr{
+    left: 15%;
+    width: 380px;
+    top: 28%;
+    position: relative;
+
+}
+
+
+ .navbar{ 
+left: 0%;
+
+flex-direction: row;
+}
+
+ ul{
+    width: auto;
+    float: left;
+    margin-top: 8px; 
+}
+
+ li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+ a{
+     text-align: center;
+     color: #fff;
+     position: relative;
+     font-size: 30px;
+     text-decoration: none;    
+}
+
+a:hover{
+   
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}@keyframes animate {
+    
+ 
+   18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+    }
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #0008;
+        text-shadow: none;
+    }
+}
+ 
+.background { 
+    width: 100vw;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow:hidden;
+    animation: change 10s infinite;
+
+}@keyframes change {
+    0%{background-image: url(img/shoe.jpg);}
+    20%{background-image: url(img/shoePurple.jpg);}
+    40%{background-image: url(img/shoeBlue.jpg);}
+    60%{background-image: url(img/shoeGreen.jpg);}
+    80%{background-image: url(img/shoeOrange.jpg);}
+    100%{background-image: url(img/shoe.jpg);}
+}
+
+.one     {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow:hidden;
+}
+
+.start  { 
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color:#fff;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 47.5%;
+}
+
+img{
+    
+    display: flex;
+    position:  absolute;
+    top: 40%;
+    left: 45%;
+    height: 200px;
+    width: 200px;
+}
+
+
+   
