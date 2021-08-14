@@ -1,109 +1,15 @@
 * { padding: 0%;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-/*index*/
-h1 {
-    position: absolute;
-    color: white;
-    top: 20%;
-    left: 15%;
-    padding: 0%;
-    background-color: transparent;
-    text-align: center;
-    overflow: hidden;
-    font-size: 70px;
-
-}
-h2 {
-    position: absolute;
-    color: white;
-    top: 30%;
-    left: 18%;
-    padding: 0%;
-    background-color: transparent;
-    text-align: center;
-    overflow: hidden;
-    font-size: 20px;
-
-}
-
-
-
-
- .navbar { 
-left: 0%;
-
-flex-direction: row;
-}
-
- ul {
-    width: auto;
-    float: left;
-    margin-top: 8px; 
-}
-
- li {
-    display: inline-block;
-    padding: 15px 30px;
-}
-
- a {
-     text-align: center;
-     color: #fff;
-     position: relative;
-     font-size: 30px;
-     text-decoration: none;    
-}
-
-a:hover {
    
-    position: relative;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-    line-height: 0.70em;
-    outline: none;
-    animation: animate 5s linear infinite;
-} @keyframes animate {
-    
- 
-   18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
-    {
-        color: #fff;
-        text-shadow: 0 0 10px #03bcf4,
-                    0 0 20px #03bcf4,
-                    0 0 40px #03bcf4,
-                    0 0 80px #03bcf4,
-                    0 0 160px #03bcf4;
-    }
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
-    {
-        color: #0008;
-        text-shadow: none;
-    }
 }
+::-webkit-scrollbar {
+    display: none;
+  }
+   
 
-.background { 
-    width: 100vw;
-    height: 100vh;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    overflow:hidden;
-    animation: change 6s infinite;
- 
-} @keyframes change {
-    0%{background-image: url(img/shoe.jpg);}
-    20%{background-image: url(img/shoePurple.jpg);}
-    40%{background-image: url(img/shoeBlue.jpg);}
-    60%{background-image: url(img/shoeGreen.jpg);}
-    80%{background-image: url(img/shoeOrange.jpg);}
-    100%{background-image: url(img/shoe.jpg);}
-}
+
+
 
     /*play*/
 .one {
@@ -130,17 +36,7 @@ a:hover {
     left: 47.5%;
 }
 
-img {
-    
-    display: flex;
-    position:  absolute;
-    top: 40%;
-    left: 45%;
-    height: 200px;
-    width: 200px;
-}
-
-/* Cards */
+/* Cards Play */
    
 .card { 
     display: grid;
@@ -160,8 +56,8 @@ img {
     transform-style: preserve-3d;
     perspective: 1000px;
    
-    top: 30%;
-    left: 30%;
+    top: 10%;
+    left: 40%;
 }
     .rgb::after { 
         content: "";
@@ -184,20 +80,21 @@ img {
         100% {background-position: 0% 50%;}
     }
 
-   .card-image { 
+   img { 
    grid-area: image;
-    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url("img/purple.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    width: 302px;
+   height: 220px;
     background-size: cover;
-    
-   }
    
+   }
+
    .card-text{ 
        color: purple ;
     grid-area: text;
     margin: 50px;
-    transform: translateZ(40px);
+    transform: translateZ(60px);
 
    }
 
@@ -211,3 +108,205 @@ img {
     border-radius: 18px;
 
    }
+  /* Index */
+
+   .background { 
+    background-image:url(img/bc1.jpg);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+
+
+
+   }
+
+   /* Cards Index */ 
+   .card2 { 
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 160px 210px 80px;
+    grid-template-areas: "image" "text";
+
+   
+
+    position: absolute;
+    border-radius: 18px;
+    background: #1d1d1d;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    cursor: pointer;
+    margin: 30px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+   
+    
+
+    top: 10%;
+    left: 10%;
+}
+    .rgb2::after { 
+        content: "";
+
+        
+        background:linear-gradient(45deg,
+        #7EC8E3 0%,
+        #0000FF 50%,
+        #000C66 100%
+        
+        
+        )
+        repeat 0% 0% / 300% 100%;
+        position: absolute;
+        inset: -3px;
+        border-radius: 16px;
+        filter: blur(3px);
+        transform: translateZ(-1px);
+        animation: rgb 6s linear infinite;
+    } 
+    @keyframes rgb { 
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    } 
+    
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+            transform: translatey(-20px);
+        }
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+    }
+    
+
+.card2-text { 
+    color: royalblue;
+    grid-area: text;
+    margin: 50px;
+    transform: translateZ(60px);
+
+}
+
+   .card2-image{ 
+    background-position: bottom;
+    position: relative;
+    grid-area: image;
+    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img/shoeBlue.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    animation: change 10s infinite;
+    animation: ease-in-out;
+
+   } 
+   
+  /* Card 3 */
+   
+  .card3 { 
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 160px 210px 80px;
+    grid-template-areas: "image" "text";
+
+   
+
+    position: absolute;
+    border-radius: 18px;
+    background: #1d1d1d;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    cursor: pointer;
+    margin: 30px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+   
+    
+
+    top: 10%;
+    left: 70%;
+}
+    .rgb3::after { 
+        content: "";
+
+        
+        background:linear-gradient(45deg,
+        #BF40BF 0%,
+        #CF9FFF 50%,
+        Orchid 100%
+        
+        
+        )
+        repeat 0% 0% / 300% 100%;
+        position: absolute;
+        inset: -3px;
+        border-radius: 16px;
+        filter: blur(3px);
+        transform: translateZ(-1px);
+        animation: rgb 6s linear infinite;
+    } 
+    @keyframes rgb { 
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    } 
+ 
+    .card3-text { 
+        color: orchid;
+        grid-area: text;
+        margin: 50px;
+        transform: translateZ(60px);
+    
+    }
+   
+
+    .card3-image{ 
+        background-position: bottom;
+        position: relative;
+        grid-area: image;
+        background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img/shoePurple.jpg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+        animation: change 10s infinite;
+        animation: ease-in-out;
+    
+       } 
+
+a { 
+
+    color: purple;
+    padding: 0%;
+    background-color: transparent;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+a:hover {
+   
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 3s linear infinite;
+    color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+
+}
+
+  
